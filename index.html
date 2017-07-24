@@ -6,26 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>
             var HOUR = 8;
-            var MINUTE = 20;
-            var PERIOD = "PM";
+            var MINUTE = 40;
+            var PERIOD = "AM";
             
-            if (MINUTE < 30) {
-                console.log("It's just after", HOUR);
-                if (PERIOD == "AM") {
-                console.log("in the morning.");
-                }
-                else {
-                console.log("in the evening.");
-                }
+
+            if(MINUTE < 30 && PERIOD == "AM") {
+                console.log("it's just after",HOUR,"in the morning");
             }
-            else if (MINUTE > 30) {
-                console.log("It's almost", HOUR);
-                if (PERIOD == "AM") {
-                console.log("in the morning.");
-                }
-                else {
-                console.log("in the evening.");
-                }
+            else if (MINUTE < 30 && PERIOD == "PM") {
+                console.log("it's just after",HOUR,"in the evening");
+
+            }
+            if(MINUTE > 30 && PERIOD == "AM") {
+                console.log("it's almost",HOUR+1,"in the morning");
+            }
+            else if (MINUTE > 30 && PERIOD == "PM") {
+                console.log("it's almost",HOUR+1,"in the evening");
             }
 
 
