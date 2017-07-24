@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            var HOUR = 8;
+            var MINUTE = 20;
+            var PERIOD = "PM";
+            
+            if (MINUTE < 30) {
+                console.log("It's just after", HOUR);
+                if (PERIOD == "AM") {
+                console.log("in the morning.");
+                }
+                else {
+                console.log("in the evening.");
+                }
+            }
+            else if (MINUTE > 30) {
+                console.log("It's almost", HOUR);
+                if (PERIOD == "AM") {
+                console.log("in the morning.");
+                }
+                else {
+                console.log("in the evening.");
+                }
+            }
+
+
+        </script>
+    
+    
+    
+    
+    </head>
+    <body>
+
+
+    </body>
+</html>
